@@ -1,0 +1,207 @@
+Definições
+    - Importações
+    - Namespace
+        - são divisões lógicas
+        - como não podemos ter dois arquivos com o mesmo nome na mesma pasta
+        - o ideal é ter apenas um namespace e uma classe por arquivo
+        - Using
+            - importações definem as bibliotecas que nosso programa irá utilizar
+            - use e abuse da criação de arquivos e namespaces
+    - Classe
+    - Método Principal
+
+Variáveis
+    - instanciar uma variável é o mesmo que criar uma variável
+    - podemos usar um TIPO ou a palavra reservada var para criar uma variável, mas tem que definir um valor
+    
+Constantes
+    - não se pode alterar 'const'
+    - as constantes são em maiúsculas, isso é uma convenção
+
+Nomes Reservados
+    - conhecidos por keywords
+
+Comentários
+    - uma linha -> // (crtl+k+c/u)
+    - várias linhas -> /* */
+    - xml -> /// <>
+
+Tipos Primitivos
+    - ou built-in type
+    - que não são primitivos são Complexos
+    - tipos de valor
+    - classificados
+        - tipos simples
+        - enumerados
+        - estruturas
+        - nulos
+    - Byte
+        - para representar um byte de fato
+        - sbyte aceita valor negativo
+    - Números Inteiros
+        - short/ushort(sem sinal)
+        - int/uint(sem sinal)
+        - long/ulong(sem sinal)
+    - Números Reais
+        - float (notação f), sempre que for colocar float colocar f no final da variavel
+        - double
+        - decimal (notação m)
+    - Boolean
+        - bool (true o false)
+    - Char
+        - char (armazernar apenas um caracter, usando aspas simples)
+    - String
+        - armazena uma cadeia de caracteres
+        - string (com aspas duplas)
+        - é uma lista de caracteres
+    - Var 
+        - substitui o nome de um tipo
+        - será do tipo do primeiro valor atribuído
+    - Object
+        - tipo genérico que recebe qualquer valor ou objetos
+    - Nullable types
+        - Null 
+        - significa vazio, nada
+        - valor Null
+        - todo tipo primitivo pode receber Null, com a marcação de '?' na frente do tipo, ex: int? idade = null;
+
+System
+    - .NET tudo começa de um tipo base chamado System
+    - base de todos os objetos no .NET
+
+Alias
+    - é um apelido que todo tipo no .NET tem
+    - exemplo: System.String tem o alias string
+
+Valores Padroes
+    - int => 0
+    - float => 0
+    - decimal => 0
+    - bool => false
+    - char => '\0'
+    - string => ""
+
+Conversao
+    - implicitas posdem ser executadas apenas com passagem de dados
+    - possuem tipos compativeis
+    - ex: float valor = 25.8f;
+    - ex: int outro = 25;
+    - a conversao anterior ocorreu pois um número real pode receber um número inteiro, porém ao contrário não
+    - sbyte aceita: short, int, long, float, double, decimal
+    - byte aceita: short, ushort, int, unint, long, ulong. float, double, decimal
+    - short aceita: int, long, float, double, or decimal
+    - ushort aceita: int, uint, long, ulong, float, double, or decimal
+    - int aceita: long, float, double, or decimal
+    - uint aceita: long, ulong, float, double, or decimal]
+    - long aceita: float, double, or decimal
+    - ulong : float, double, or decimal
+    - char aceita: ushort, int, uint, long, ulong, float, double, or decimal
+    - float aceita: double
+
+    - explicita ocorre quando os tipos não são compativeis
+    - ex: int inteiro = 100;
+    - ex: uint inteiroSemSinal = (uint)inteiro; (conversao explicita)
+
+Parse 
+    - metodo presente em todo tipo primitivo
+    - usado para converter um caractere ou string para um tipo qualquer
+    - ex: int inteiro = int.Parse("100")
+
+Convert 
+    - similar ao parse, porém permite converter vários tipos de valor, não apenas string
+    - ex: int inteiro = Convert.ToInt32("100";)
+
+Atribuição
+    - atribuir um valor
+    - x += 5 é o mesmo que x = x + 5
+
+Comparação
+    - retorna true o false
+
+Operadores lógicos
+    - usado para operações condicionais
+    - retorna true o false
+
+Estruturas condicionais if
+    - caso alguma condição seja atendida
+    - if, else if, else
+
+For 
+    - para cada item em um valor 
+    - executa ação várias vezes 
+    - definido pela palavra for 
+    - exige 3 parâmetros 
+        - contador
+        - condição 
+        - incremento
+
+Switch
+    - executado em cascata
+    - parar a execuação com o comando break
+    - possui uma execuação padrão chamada default
+
+While
+    - enquanto uma condição for verdadeira
+
+Do / While
+    - checa a condição depois de executar
+
+Funções e métodos
+    - para segmentar o programa em Funções
+    - se chama funções ou métodos
+    - possui um retorno, um nome e parâmetros
+    - essa condição é chamada de assinatura
+    - começa sempre com maiúsculas
+    - parametros opcionais é quando você atribui um valor defaoult no final
+
+Heap e Stack
+    - A memória é divida em duas partes, Heap e Stack
+    - Heap armazena os dados
+    - Stack armazena as referências para os dados
+    - qualquer tipo no .NET é tratado como:
+        - tipo de referência (Reference Type)
+        - Tipo de valor (value type)
+    - Tipos de valor armazena dados
+    - São armazenados em um local da memória chamada Stack
+    - quando armazenamos um valor, a memória é alocada
+    - este espaço armazena o dado criado
+    - nossa variável acessa este dado diretamente
+    - se assimilarmos uma variável do tipo de valor a outra
+        - o valor será copiado
+        - ambas serão independentes
+    - built-in, structs, enuns
+    - Garbage Collector não acessa o Stack
+    - Tipos de referência
+    - armazena o endereço do objeto que contèm os dados
+    - não armazena os dados em significa
+    - são armazenados em um local da memória chamado de Heap
+    - ao assimilar uma variável:
+        - criará uma referência
+        - aponta para a mesma informação
+        - não são independentes
+    - quando não mais utilizados são marcados para exclusão
+    - Garbage Collector passa removendo todos else
+    - Classes, Objects, Arrays...
+
+structs
+    - tipos de dado estruturado
+    - é tipo de valor, armazenado no stack, pois aloca na memória, não é uma referência como as Classes
+    - armazena apenas outros tipos de dados
+    - definido pela palavra struct 
+    - composto de propriedades e métodos 
+    - nome sempre com maiúsculo 
+        - o mesmo para propriedades e métodos 
+    - criado a partir da palavra new (assim como em classes) 
+        - neste momento sim temos os Valores
+    - possui método construtor (assim com as classes) 
+
+Enumeradores
+    - enum 
+    - usado para fornecer uma melhor visualização do código ]
+    - substituem o uso de inteiros 
+    - usados em listas curtas 
+    - usados em dados fixos 
+        - hard coded
+    - sempre em maiúsculo   
+        - começar com a letra E 
+    

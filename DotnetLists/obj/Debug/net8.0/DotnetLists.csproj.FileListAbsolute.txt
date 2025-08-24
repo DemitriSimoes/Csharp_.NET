@@ -1,0 +1,15 @@
+D:\dev\DotnetLists\bin\Debug\net8.0\DotnetLists.exe
+D:\dev\DotnetLists\bin\Debug\net8.0\DotnetLists.deps.json
+D:\dev\DotnetLists\bin\Debug\net8.0\DotnetLists.runtimeconfig.json
+D:\dev\DotnetLists\bin\Debug\net8.0\DotnetLists.dll
+D:\dev\DotnetLists\bin\Debug\net8.0\DotnetLists.pdb
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.AssemblyInfoInputs.cache
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.AssemblyInfo.cs
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.csproj.CoreCompileInputs.cache
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.sourcelink.json
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.dll
+D:\dev\DotnetLists\obj\Debug\net8.0\refint\DotnetLists.dll
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.pdb
+D:\dev\DotnetLists\obj\Debug\net8.0\DotnetLists.genruntimeconfig.cache
+D:\dev\DotnetLists\obj\Debug\net8.0\ref\DotnetLists.dll
